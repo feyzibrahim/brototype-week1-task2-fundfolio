@@ -3,19 +3,47 @@
     src: url("./font/Gilroy-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url("./font/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url("./font/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'gilroy-heavy';
+    src: url("./font/Gilroy-Heavy.ttf");
+}
+
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    color: #edecf3;
-
+    color: #fff;
 }
 
 a {
     color: #fff;
     text-decoration: none;
+    font-family: gilroy-bold;
+}
+
+h1 {
+    font-family: gilroy-heavy;
+}
+
+h3 {
+    font-family: gilroy-bold;
+}
+
+p {
+    font-family: gilroy-medium;
 }
 
 i {
@@ -26,6 +54,24 @@ i {
     display: none;
 }
 
+button {
+    background: linear-gradient(160deg, rgb(245, 82, 64), rgb(238, 54, 142)) rgb(238, 54, 142);
+    width: 204px;
+    border: none;
+    color: #fff;
+    height: 56px;
+    padding: 1px 6px;
+    font-size: 24px;
+    font-family: gilroy-bold;
+    border-radius: 30px;
+}
+
+button svg {
+    fill: #fff;
+}
+
+/* Navbar */
+
 nav {
     position: fixed;
     width: 100%;
@@ -33,6 +79,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
 }
 
 .brand {
@@ -47,14 +96,20 @@ nav {
 
 .links-web {
     display: flex;
-    gap: 50px;
-    margin-right: 30px;
+    gap: 40px;
+    margin-right: 22px;
 }
 
 .links-social {
     display: flex;
     gap: 12px;
 }
+
+.selected {
+    color: #df4b43;
+}
+
+/* First session */
 
 .home {
     background-image: url("https://fundfolio.gumlet.io/fundfolio/hero_bg.svg?w=3840&q=75");
@@ -65,5 +120,93 @@ nav {
 }
 
 .home-main {
-    padding: 10%;
+    padding: 226px 0 0 133px;
+    width: 50%;
+}
+
+.home-main h1 {
+    font-size: 71px;
+    line-height: 80px;
+}
+
+.home-main p {
+    font-size: 21.333px;
+    padding: 23px 0 40px;
+}
+
+.y-combinator p {
+    padding: 0;
+    margin-top: 97px;
+    margin-bottom: 10px;
+    font-family: gilroy;
+    font-size: 14.2px;
+    color: #9b97b6;
+    font-weight: 400;
+}
+
+
+/* About page */
+
+.about {
+    height: 100vh;
+    background-color: #0d0a1b;
+    display: flex;
+}
+
+.about-left {
+    width: 50%;
+}
+
+.about-left-inside {
+    padding: 17% 0 0 18.5%;
+}
+
+.about-left h3 {
+    font-size: 33.7px;
+    color: #ffffff33;
+    margin-bottom: 35px;
+}
+
+.about-left h1 {
+    font-size: 53.3px;
+    font-family: gilroy-bold;
+    line-height: 62.4px;
+}
+
+.about-left p {
+    font-size: 21.3px;
+    color: #70707C;
+    margin-top: 20px;
+    padding-right: 40px;
+}
+
+.about-right {
+    padding-top: 200px;
+    padding-left: 90px;
+    width: 50%;
+}
+
+.about-right h1 {
+    font-family: gilroy-bold;
+    font-size: 89px;
+    background-clip: text;
+    background: -webkit-linear-gradient(rgb(64, 234, 245), rgb(80, 77, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: -70px;
+    margin-left: 25px;
+}
+
+.about-right p {
+    font-size: 21.3px;
+    font-family: gilroy-bold;
+    opacity: .6;
+    margin-left: 25px;
+}
+
+/* Our Way Session */
+
+.our-way {
+    background-color: #0d0a1b;
+    height: 100vh;
 }
