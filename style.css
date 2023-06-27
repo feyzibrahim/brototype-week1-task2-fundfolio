@@ -18,9 +18,17 @@
     src: url("./font/Gilroy-Heavy.ttf");
 }
 
+@font-face {
+    font-family: 'gilroy-sb';
+    src: url("./font/Gilroy-SemiBold.ttf");
+}
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -32,6 +40,10 @@ a {
     color: #fff;
     text-decoration: none;
     font-family: gilroy-bold;
+}
+
+a:hover {
+    color: #df4b43;
 }
 
 h1 {
@@ -58,12 +70,12 @@ button {
     background: linear-gradient(160deg, rgb(245, 82, 64), rgb(238, 54, 142)) rgb(238, 54, 142);
     width: 204px;
     border: none;
-    color: #fff;
     height: 56px;
-    padding: 1px 6px;
+    color: #fff;
     font-size: 24px;
-    font-family: gilroy-bold;
+    padding: 1px 6px;
     border-radius: 30px;
+    font-family: gilroy-bold;
 }
 
 button svg {
@@ -82,6 +94,7 @@ nav {
     background: transparent;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
+    z-index: 1;
 }
 
 .brand {
@@ -120,7 +133,7 @@ nav {
 }
 
 .home-main {
-    padding: 226px 0 0 133px;
+    padding: 13% 0 0 133px;
     width: 50%;
 }
 
@@ -143,7 +156,6 @@ nav {
     color: #9b97b6;
     font-weight: 400;
 }
-
 
 /* About page */
 
@@ -209,4 +221,186 @@ nav {
 .our-way {
     background-color: #0d0a1b;
     height: 100vh;
+    display: flex;
+}
+
+.our-way-left {
+    padding-top: 16%;
+    width: 35%;
+}
+
+.tog-div {
+    padding-left: 28%;
+}
+
+.toggle-button {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-bottom: 5%;
+}
+
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+.toggle-button-active {
+    background: -webkit-linear-gradient(rgb(64, 234, 245), rgb(80, 77, 255));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.our-way-left h1 {
+    font-family: gilroy-bold;
+    font-size: 53.33px;
+}
+
+.our-way-left h3 {
+    color: #ffffff33;
+    font-size: 24.8px;
+    padding-left: 28%;
+    margin-bottom: 8%;
+}
+
+.our-way-left p {
+    font-size: 17.77px;
+    font-family: gilroy;
+}
+
+.our-way-right {
+    padding-top: 12%;
+    width: 50%;
+    z-index: 0;
+}
+
+.toggle-div {
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to top, rgb(32, 30, 45), rgb(18, 15, 32));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.toggle-div p {
+    font-size: 26.67px;
+    width: 388px;
+}
+
+.toggle-img {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+/* Our products session */
+
+.our-product {
+    background-color: #0d0a1b;
+    height: 100vh;
+    padding-left: 9.8%;
+}
+
+.our-product h2 {
+    font-size: 55px;
+    font-family: gilroy-bold;
+    padding-top: 11%;
+}
+
+.our-product h3 {
+    font-size: 34px;
+    color: #ffffff33;
+    margin-bottom: 3%;
+    padding-top: 11%;
+}
+
+.our-product p {
+    color: #ffffff33;
+    font-family: gilroy-sb;
+    width: 76%;
+}
+
+.our-product-row {
+    display: flex;
+}
+
+.products {
+    background: linear-gradient(-210deg, rgb(32, 30, 45), rgb(18, 15, 32));
+    width: 320px;
+    height: 341.33px;
+    margin-right: 70px;
+    border-radius: 25px;
+}
+
+.un-hide {
+    display: none;
+}
+
+.un-hide p {
+    font-size: 25px;
+    color: #000;
+    padding-left: 10px;
+}
+
+.products:hover {
+    width: 330px;
+    height: 280px;
+    background: linear-gradient(90deg, #e28547, #fcb406);
+    transition: .5s ease;
+    outline: #555555 .5px solid;
+    outline-offset: 10px;
+    margin-top: 30px;
+    margin-right: 60px;
+
+    .products-logo-yellow, .products-logo-violet {
+        width: 0;
+        transition: .5s ease;
+    }
+
+    .hide {
+        display: none;
+        transition: .5s ease;
+    }
+
+    .company-logo {
+        width: 200px;
+        height: 40px;
+        transition: .5s ease;
+        padding-top: 40px;
+    }
+
+    .change-color {
+        fill: #000;
+        color: #000;
+
+    }
+
+    .un-hide {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.violet-grad:hover {
+    background: linear-gradient(90deg, #a981fb, #7f6af3);
+}
+
+
+.products-sub {
+    padding: 42px 45px;
+}
+
+.products-logo-yellow {
+    border-top: #ffc400 2px solid;
+    width: 8%;
+    margin-bottom: 10px;
+}
+
+.products-logo-violet {
+    border-top: #6d5ec8 2px solid;
+    width: 8%;
+    margin-bottom: 10px;
 }
