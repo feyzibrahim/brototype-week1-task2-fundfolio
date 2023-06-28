@@ -67,7 +67,7 @@ i {
 }
 
 button {
-    background: linear-gradient(160deg, rgb(245, 82, 64), rgb(238, 54, 142)) rgb(238, 54, 142);
+    background: linear-gradient(160deg, rgb(245, 82, 64), rgb(238, 54, 142));
     width: 204px;
     border: none;
     height: 56px;
@@ -113,13 +113,13 @@ nav {
     margin-right: 22px;
 }
 
+.selected {
+    color: #df4b43;
+}
+
 .links-social {
     display: flex;
     gap: 12px;
-}
-
-.selected {
-    color: #df4b43;
 }
 
 /* First session */
@@ -403,4 +403,163 @@ nav {
     border-top: #6d5ec8 2px solid;
     width: 8%;
     margin-bottom: 10px;
+}
+
+/* Partners session */
+
+.partners {
+    background-color: #0d0a1b;
+    height: 100vh;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.partners-sub h3 {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    font-size: 38px;
+    color: #ffffff33;
+}
+
+.partners-logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partners-logo div {
+    width: 33%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.partners img {
+    width: 60%;
+    padding: 0;
+}
+
+.partners1 {
+    border-bottom: 1px #303030 solid;
+    border-right: 1px #303030 solid;
+}
+
+.partners2 {
+    border-bottom: 1px #303030 solid;
+}
+
+.partners3 {
+    border-bottom: 1px #303030 solid;
+    border-left: 1px #303030 solid;
+}
+
+.partners5 {
+    border-right: 1px #303030 solid;
+    border-left: 1px #303030 solid;
+}
+
+/* Contact Session */
+
+.contact {
+    background-image: url("https://fundfolio.gumlet.io/fundfolio/location-bg.jpg?w=1920&q=75");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    height: 130vh;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.contact-sub {
+    padding-top: 90px;
+}
+
+.contact-sub h3 {
+    padding-bottom: 40px;
+    font-size: 38px;
+    color: #ffffff33;
+}
+
+label {
+    font-family: gilroy-medium;
+    font-size: 20px;
+}
+
+.contact p {
+    padding-bottom: 8px;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px #6a6a77 solid;
+    outline: none;
+    font-size: 30px;
+    margin-bottom: 47px;
+    padding-bottom: 18px;
+    width: 45%;
+    font-family: gilroy-medium;
+}
+
+.contact button {
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: rgb(245, 82, 64);
+}
+
+/* Footer Session */
+
+footer {
+    background-color: #0d0a1b;
+    height: 100vh;
+    padding-left: 11.4%;
+    padding-right: 11.4%;
+}
+
+.footer {
+    padding-top: 15.3%;
+    display: flex;
+}
+
+.footer div {
+    width: 33%;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: gilroy;
+    margin-top: 20px;
+}
+
+.footer-light {
+    margin-top: 20px;
+    color: #ffffff90;
+}
+
+.footer h4 {
+    color: #393644;
+    font-size: 24px;
+    font-family: gilroy;
+}
+
+.add-margin {
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.madeWithLove {
+    margin-top: 110px;
+}
+
+.madeWithLove p {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.madeWithLove svg {
+    padding: 0 5px;
 }
